@@ -1,0 +1,36 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="Page-1" id="VLCMSRz3HSYEYuNGWguX">
+    <mxGraphModel dx="1252" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bcV6X7Qzq-irYB2Az89K-2" target="bcV6X7Qzq-irYB2Az89K-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-2" value="CSV New Homes Results From Redfin" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.csv_file;" vertex="1" parent="1">
+          <mxGeometry x="170" y="120" width="139" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.691;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="bcV6X7Qzq-irYB2Az89K-5" target="bcV6X7Qzq-irYB2Az89K-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="521.5" y="310" as="sourcePoint" />
+            <mxPoint x="370" y="632" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-10" value="Spatial Join&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;New &quot;near_station&quot; field.&lt;/div&gt;&lt;div&gt;Homes within 1.5 of train stations will have &quot;y&#39; in &quot;near_station&quot; field.&lt;/div&gt;&lt;div&gt;Homes not within 1.5 km of train stations will have &quot;n&quot; in &quot;near_station&quot; field&amp;nbsp;&amp;nbsp;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="bcV6X7Qzq-irYB2Az89K-8">
+          <mxGeometry x="0.7621" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-4" value="100 Year Floodplain Feature Class" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.misc.map;" vertex="1" parent="1">
+          <mxGeometry x="920" y="110" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-5" value="NJ Train Stations Feature Class" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.misc.map;" vertex="1" parent="1">
+          <mxGeometry x="480" y="130" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-6" value="Redfin Results" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.csv_file;" vertex="1" parent="1">
+          <mxGeometry x="279" y="460" width="99" height="63" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
