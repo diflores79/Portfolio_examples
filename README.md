@@ -30,8 +30,22 @@ The 100 year floodplain data was exported from the [USA Flood Hazard Reduced Set
 - FLD_AR_ID LIKE '34%
 - And esri_symbology = '1% Annual Chance Flood Hazard'
 
-The results were stored locally as a feature class in `C:\github_house_search_local_bk\house_search.gdb\Flooding\njfloodplain`. This feature class is used to 100 year floodplains in New Jersey.
+The results were stored locally as a feature class in `C:\github_house_search_local\house_search.gdb\Flooding\njfloodplain`. This feature class is used to 100 year floodplains in New Jersey.
 
 ### NJ Train Stations
 
 The NJ train station data was exported from the [NJ Passenger Rail Stations](https://hub.arcgis.com/datasets/njdca::nj-passenger-rail-stations/about) feature layer. It was converted to a local feature class to easier processing.
+
+## Prerequisites
+
+Before running the geoprocessing tool, the user should:
+
+1. Clone [Portfolio_examples](https://github.com/diflores79/Portfolio_examples/tree/main) to `C:\github`
+2. Run /scripts/first_run.py locally to copy files to `C:\github_house_search_local`
+3. Open `C:\github_house_search_local\geospatial_files\web_map_view.aprx` with ArcGIS Pro.
+4. In ArcGIS Pro, click on the `View` tab, and then click on `Catalog Pane`.
+5. In the opened Catalog Pane, open `Folders`, right-click `web_map_view.atbx`, click `New`, and then click on `Script`
+6. On the left side of the New Script window, click on `Execution`, click on the Browse button, find `C:\github_house_search_local\scripts\house_search_agol.py`, and then click ok.
+7. On the left side of the New Script window, click Parameters. You will create 3 parameters
+
+
