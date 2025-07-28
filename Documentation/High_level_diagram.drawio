@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
   <diagram name="Page-1" id="VLCMSRz3HSYEYuNGWguX">
-    <mxGraphModel dx="1252" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="816" dy="641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -56,7 +56,9 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bcV6X7Qzq-irYB2Az89K-22" value="Filter:&lt;div&gt;&amp;nbsp;in_floodplain = &#39;not in 100 year floodplain&#39;&amp;nbsp;&lt;/div&gt;&lt;div&gt;And near_station = &#39;y&#39;&lt;/div&gt;&lt;div&gt;&amp;nbsp;And BEDS &amp;gt;= 2&amp;nbsp;&lt;/div&gt;&lt;div&gt;And PRICE &amp;lt; 450000&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="bcV6X7Qzq-irYB2Az89K-14" target="bcV6X7Qzq-irYB2Az89K-21">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="0.0058" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="bcV6X7Qzq-irYB2Az89K-14" value="Homes Feature Class" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/home.svg;" vertex="1" parent="1">
           <mxGeometry x="270" y="850" width="100" height="97" as="geometry" />
