@@ -4,31 +4,80 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="bcV6X7Qzq-irYB2Az89K-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bcV6X7Qzq-irYB2Az89K-2" target="bcV6X7Qzq-irYB2Az89K-6">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bcV6X7Qzq-irYB2Az89K-2" target="bcV6X7Qzq-irYB2Az89K-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="328.5" y="460" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="bcV6X7Qzq-irYB2Az89K-2" value="CSV New Homes Results From Redfin" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.csv_file;" vertex="1" parent="1">
           <mxGeometry x="170" y="120" width="139" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="bcV6X7Qzq-irYB2Az89K-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.691;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="bcV6X7Qzq-irYB2Az89K-5" target="bcV6X7Qzq-irYB2Az89K-6">
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="bcV6X7Qzq-irYB2Az89K-11" target="bcV6X7Qzq-irYB2Az89K-13">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="521.5" y="310" as="sourcePoint" />
-            <mxPoint x="370" y="632" as="targetPoint" />
+            <mxPoint x="328.5" y="460" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bcV6X7Qzq-irYB2Az89K-10" value="Spatial Join&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;New &quot;near_station&quot; field.&lt;/div&gt;&lt;div&gt;Homes within 1.5 of train stations will have &quot;y&#39; in &quot;near_station&quot; field.&lt;/div&gt;&lt;div&gt;Homes not within 1.5 km of train stations will have &quot;n&quot; in &quot;near_station&quot; field&amp;nbsp;&amp;nbsp;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="bcV6X7Qzq-irYB2Az89K-8">
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-10" value="Spatial Join between Homes and Train Stations&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Homes with new &quot;near_station&quot; field.&lt;/div&gt;&lt;div&gt;Homes within 1.5 km of train stations will have &quot;y&#39; in &quot;near_station&quot; field.&lt;/div&gt;&lt;div&gt;Homes not within 1.5 km of train stations will have &quot;n&quot; in &quot;near_station&quot; field&amp;nbsp;&amp;nbsp;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="bcV6X7Qzq-irYB2Az89K-8">
           <mxGeometry x="0.7621" y="3" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="-3" y="-22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="bcV6X7Qzq-irYB2Az89K-13" target="bcV6X7Qzq-irYB2Az89K-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1136.67" y="319.99999999999994" as="sourcePoint" />
+            <mxPoint x="425" y="930.2" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="bcV6X7Qzq-irYB2Az89K-4" value="100 Year Floodplain Feature Class" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.misc.map;" vertex="1" parent="1">
-          <mxGeometry x="920" y="110" width="130" height="100" as="geometry" />
+          <mxGeometry x="670" y="500" width="130" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="bcV6X7Qzq-irYB2Az89K-5" value="NJ Train Stations Feature Class" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.misc.map;" vertex="1" parent="1">
-          <mxGeometry x="480" y="130" width="130" height="100" as="geometry" />
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-11" value="NJ Trains Feature Class" style="shape=mxgraph.signs.transportation.train_2;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="520" y="120" width="66" height="99" as="geometry" />
         </mxCell>
-        <mxCell id="bcV6X7Qzq-irYB2Az89K-6" value="Redfin Results" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.csv_file;" vertex="1" parent="1">
-          <mxGeometry x="279" y="460" width="99" height="63" as="geometry" />
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.712;exitY=0.998;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="bcV6X7Qzq-irYB2Az89K-4" target="bcV6X7Qzq-irYB2Az89K-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="600" />
+              <mxPoint x="760" y="690" />
+              <mxPoint x="320" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-18" value="Spatial Intersect between Homes and 100 Year Floodplain&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Homes with new &quot;in_floodplain&quot; field&lt;/div&gt;&lt;div&gt;Homes inside within 100 year floodplain will have &quot;1% Annual Chance Flood Hazard&quot; in &quot;in_floodplain&quot; field&lt;/div&gt;&lt;div&gt;Homes not within 100 year floodplain will have &quot;not in 100 year floodplain in &quot;in_floodplain&quot; field&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="bcV6X7Qzq-irYB2Az89K-15">
+          <mxGeometry x="0.9005" y="1" relative="1" as="geometry">
+            <mxPoint y="-45" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-13" value="Homes Feature Class" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/home.svg;" vertex="1" parent="1">
+          <mxGeometry x="270" y="510" width="100" height="97" as="geometry" />
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-20" value="Append" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="bcV6X7Qzq-irYB2Az89K-14" target="bcV6X7Qzq-irYB2Az89K-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-22" value="Filter:&lt;div&gt;&amp;nbsp;in_floodplain = &#39;not in 100 year floodplain&#39;&amp;nbsp;&lt;/div&gt;&lt;div&gt;And near_station = &#39;y&#39;&lt;/div&gt;&lt;div&gt;&amp;nbsp;And BEDS &amp;gt;= 2&amp;nbsp;&lt;/div&gt;&lt;div&gt;And PRICE &amp;lt; 450000&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="bcV6X7Qzq-irYB2Az89K-14" target="bcV6X7Qzq-irYB2Az89K-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-14" value="Homes Feature Class" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/home.svg;" vertex="1" parent="1">
+          <mxGeometry x="270" y="850" width="100" height="97" as="geometry" />
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-19" value="Homes For Sale Feature Class" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="854.25" width="80" height="88.5" as="geometry" />
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-24" value="Overwrite&amp;nbsp;&lt;div&gt;New Homes Hosted Feature Layer&lt;/div&gt;&lt;div&gt;in AGOL&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="bcV6X7Qzq-irYB2Az89K-21" target="bcV6X7Qzq-irYB2Az89K-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-21" value="Homes Feature Class" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/home.svg;" vertex="1" parent="1">
+          <mxGeometry x="270" y="1120" width="100" height="97" as="geometry" />
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-26" value="Append to&lt;div&gt;House Search Hosted Feature Layer&lt;/div&gt;&lt;div&gt;in AGOL&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="bcV6X7Qzq-irYB2Az89K-23" target="bcV6X7Qzq-irYB2Az89K-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-23" value="New Homes Hosted Feature Layer" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=#0079D6;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;align=center;fontSize=12;outlineConnect=0;spacingTop=-6;fontColor=#FFFFFF;sketch=0;shape=mxgraph.sitemap.cloud;" vertex="1" parent="1">
+          <mxGeometry x="630" y="1130.25" width="120" height="76.5" as="geometry" />
+        </mxCell>
+        <mxCell id="bcV6X7Qzq-irYB2Az89K-25" value="Homes For Sale Hosted Feature Layer" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=#0079D6;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;align=center;fontSize=12;outlineConnect=0;spacingTop=-6;fontColor=#FFFFFF;sketch=0;shape=mxgraph.sitemap.cloud;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="1130.25" width="120" height="76.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

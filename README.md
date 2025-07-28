@@ -16,7 +16,7 @@ This is a personal side project. The goal of this geoprocessing tool is to geosp
     ![House Search Web Map](/Documentation/Images/web_map.png)
 
 
-The script for the geoprocessing tool is `/scripts/house_search_agol.py`. Review [Workflow Section](#workflow) to see a high level workflow of the geoprocessing tool
+The script for the geoprocessing tool is [house_search_agol.py](/scripts/house_search_agol.py). Review [Workflow Section](#workflow) to see a high level workflow of the geoprocessing tool
 
 
 ## Data Sources
@@ -47,6 +47,26 @@ The NJ train station data was exported from the [NJ Passenger Rail Stations](htt
 Below is a high level diagram of the geoprocessing tool:
 
 ![High Level Diagram](/Documentation/High_level_diagram.png)
+
+A summary of the geoprocessing tool:
+
+1. It will convert the dowloaded new homes csv to a new homes layer.
+2. It will spatially join the new homes layer with the NJ Trains feature class and a new `near_station` field will be added to the new homes layer:
+    - New homes that have NJ Trains attributes appended to them will have "y" in the `new_station` field
+    - New homes that do not have NJ Trains attributes appended to them will have "n" in the `new_station` field
+3. It will do a spatial intersect between the new homes layer and the 100 year floodplain feature class and create a new `in_floodplain` field:
+    - New homes that were selected during the spatial intersect will have "1% Annual Chance Flood Hazard" in the `in_floodplain` field.
+    - New homes that were not selected during the spatial intersect will have "not in 100 year floodplain" in the `in_floodplain` field.
+4. All new home features will be appended to a local feature class. This feature class will archive all of the processed homes.
+5. But new homes that meet this criteria will be exported to a local homes feature class:
+   - `in_floodplain` = "not in 100 year floodplain"
+   - `near_station` = "y"
+   - `Beds` >= 2
+   - `Price` < 450000
+6. The data in the local homes feature class will be used to overwrite a private new homes hosted feature layer in AGOL.
+7. The data from the private new homes hosted feature layer will be appended to the [house search hosted feature layer](https://www.arcgis.com/home/item.html?id=7acd4bbc02a843b785760776bbebb8e3). 
+
+The results of the geoprocessing tool can be displayed in the [House Seach Web Map](https://www.arcgis.com/apps/mapviewer/index.html?webmap=a9f2fa2b4262417f96440b300cdda491).
 
 
 ## Prerequisites
