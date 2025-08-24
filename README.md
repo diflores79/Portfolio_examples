@@ -92,5 +92,3 @@ To process new homes:
   - **database password**: Add the password of the homes postgresql database
 
 The script will process the new homes. New homes will be appended to a homes postgresql database and appended to a new homes hosted feature layer in AGOL. For more information about the workflow, please review [Workflow](#workflow) section of the Readme file.
-
-
