@@ -73,22 +73,24 @@ The results of the geoprocessing tool can be displayed in the [House Seach Web M
 
 Before running the geoprocessing tool, the user should:
 
-1. Clone [Portfolio_examples](https://github.com/diflores79/Portfolio_examples/tree/main) to `C:\github`
-2. Run /scripts/first_run.py locally to copy files to `C:\github_house_search_local`
-3. Open `C:\github_house_search_local\geospatial_files\web_map_view.aprx` with ArcGIS Pro.
-4. In ArcGIS Pro, click on the `View` tab, and then click on `Catalog Pane`.
-5. In the opened Catalog Pane, open `Folders`, right-click `web_map_view.atbx`, click `New`, and then click on `Script`
-6. On the left side of the New Script window, click on `Execution`, click on the Browse button, find `C:\github_house_search_local\scripts\house_search_agol.py`, and then click ok.
-7. On the left side of the New Script window, click Parameters. You will create 3 parameters:
+1. Set up an enterprise PostgreSQL database 
+2. Clone [Portfolio_examples](https://github.com/diflores79/Portfolio_examples/tree/main) to `C:\github`
+3. Run [/scripts/first_run.py](/scripts/first_run.py) locally to copy files to `C:\github_house_search_local`
 
-    | Label | Data Type | 
-    |-------| ------|
-    | Type "csv path" | Select "File" Parameter Data Type|
-    | Type "AGOL Username" | Keep the Parameter Data Type as "String" |
-    | Type "AGOL Password" | Keep the Parameter Data Type as "String" |
-8. Save the project to keep the changes
+## Process new homes
 
+To process new homes:
 
+1. Search and export homes from [Redfin](https://www.redfin.com) as a csv. To export data from Redfin, see [New Homes](#new-homes) section of the Readme file.
+2. Open `/geospatial_files/webmap.aprx` with ArcGIS Pro
+3. In ArcGIS Pro, click on the `View` tab and click on `Catalog Pane` to open the Catalog Pane
+4. In the Catalog Pane, open `Folders/web_map_view.atbx` and double click on `Script`
+5. Populate the parameters and then click Run:
+  - **new homes csv**: Select the csv download from Redfin
+  - **AGOL username**: Add the username from AGOL
+  - **database user**: Add the username of the homes postgresql database
+  - **database password**: Add the password of the homes postgresql database
 
+The script will process the new homes. New homes will be appended to a homes postgresql database and appended to a new homes hosted feature layer in AGOL. For more information about the workflow, please review [Workflow](#workflow) section of the Readme file.
 
 
