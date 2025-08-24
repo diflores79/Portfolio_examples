@@ -3,8 +3,8 @@
 ## About
 This is a personal side project. The goal of this geoprocessing tool is to geospatially analyze new homes from [Redfin](https://www.redfin.com/county/1910/NJ/Union-County) to identify newly posted NJ homes that are not within the 100 year floodplain, and has a train station within 1.5 kilometers. There will be 2 exports of the data:
 
-1. All new homes will be appended to a local feature class: `C:/github_house_search_local/geospatial_files/gdb/homes/homes_for_sale`
-2. Select homes will be automatically appended to a House Search hosted feature layer in ArcGIS Online (AGOL). New homes that meet this criteria will be appended to the AGOL hosted feature layer:
+1. All new homes will be appended to a `home_for_sale` feature class in an PostgreSQL enterprise database
+2. Features in `homes_for_sale` feature class will be selected, exported, and appended to a House Search hosted feature layer in ArcGIS Online (AGOL). New homes that meet this criteria will be appended to the AGOL hosted feature layer:
 
     - Must not be within the 100 year floodplain
     - Must be within 1.5 km of a train station
@@ -50,20 +50,20 @@ Below is a high level diagram of the geoprocessing tool:
 
 A summary of the geoprocessing tool:
 
-1. It will convert the dowloaded new homes csv to a new homes layer.
+1. It will convert the downloaded new homes csv to a new homes layer.
 2. It will spatially join the new homes layer with the NJ Trains feature class and a new `near_station` field will be added to the new homes layer:
     - New homes that have NJ Trains attributes appended to them will have "y" in the `new_station` field
     - New homes that do not have NJ Trains attributes appended to them will have "n" in the `new_station` field
 3. It will do a spatial intersect between the new homes layer and the 100 year floodplain feature class and create a new `in_floodplain` field:
     - New homes that were selected during the spatial intersect will have "1% Annual Chance Flood Hazard" in the `in_floodplain` field.
     - New homes that were not selected during the spatial intersect will have "not in 100 year floodplain" in the `in_floodplain` field.
-4. All new home features will be appended to a local feature class. This feature class will archive all of the processed homes.
-5. But new homes that meet this criteria will be exported to a local homes feature class:
+4. All new home features will be appended to a `homes_for_sale` feature class in a PostgreSQL enterprise database. This feature class will archive all of the processed homes.
+5. The `homes_for_sale` feature class will be queried. Selected homes will be exported to a local homes geojson file. Below is the selection criteria:
    - `in_floodplain` = "not in 100 year floodplain"
    - `near_station` = "y"
    - `Beds` >= 2
    - `Price` < 450000
-6. The data in the local homes feature class will be used to overwrite a private new homes hosted feature layer in AGOL.
+6. The data in the local homes geojson file will be used to overwrite a private new homes hosted feature layer in AGOL.
 7. The data from the private new homes hosted feature layer will be appended to the [house search hosted feature layer](https://www.arcgis.com/home/item.html?id=7acd4bbc02a843b785760776bbebb8e3). 
 
 The results of the geoprocessing tool can be displayed in the [House Seach Web Map](https://www.arcgis.com/apps/mapviewer/index.html?webmap=a9f2fa2b4262417f96440b300cdda491).
