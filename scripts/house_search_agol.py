@@ -145,6 +145,10 @@ new_homes_layer.manager.overwrite(new_homes_json)
 arcpy.AddMessage('connecting to homes for sale hosted feature layer')
 homes_for_sale_collection = gis.content.get('7acd4bbc02a843b785760776bbebb8e3')
 homes_for_sale_layer = homes_for_sale_collection.layers[0]
+
+#truncates the homes for sale hosted fature layer
+arcpy.AddMessage('truncating homes for sale hosted feature layer')
+homes_for_sale_layer.manager.truncate()
 homes_for_sale_layer_ct = homes_for_sale_layer.query(return_count_only = True)
 arcpy.AddMessage('The homes for sale hosted feature layer has {} features'.format(homes_for_sale_layer_ct))
 
